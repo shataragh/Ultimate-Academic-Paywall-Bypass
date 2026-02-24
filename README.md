@@ -5,13 +5,19 @@
 ![Open Access](https://img.shields.io/badge/Open%20Science-Supported-orange)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-> 🚀 A smart, multi-source DOI resolver that helps researchers ethically access academic papers from open-access platforms and archives.
+> 🚀 A powerful open‑access discovery tool that helps researchers locate publicly available versions of academic papers using ethical, legal, multi‑source search techniques.
 
 ---
 
 ## 📚 Overview
 
-Academic research should be accessible to everyone. This Python tool helps bypass paywalls **legally and ethically** by searching across trusted open-access repositories, author uploads, and archival services. It uses robust scraping, API calls, and intelligent heuristics to locate full-text PDFs of scholarly articles.
+Access to scientific knowledge should never depend on geography, sanctions, or financial barriers.  
+**Ultimate Academic Paywall Bypass** is a Python‑based tool that automatically searches across open‑access APIs, preprint servers, author‑uploaded PDFs, and archival mirrors to find accessible versions of academic articles.
+
+This tool does **not** break paywalls.  
+It automates what researchers already do manually — but faster, smarter, and more reliably.
+
+---
 
 ## 📸 Screenshot
 
@@ -23,30 +29,27 @@ Academic research should be accessible to everyone. This Python tool helps bypas
 
 ## ✨ Features
 
-- 🔍 **DOI Validation & Extraction**  
-  Accepts raw DOIs or DOI URLs and cleans them for processing.
+### 🔍 DOI Extraction & Validation  
+Accepts raw DOIs or DOI URLs and automatically extracts the correct identifier.
 
-- 🌐 **Multi-Source Search**  
-  Queries APIs and scrapes platforms like:
-  - Unpaywall
-  - CORE
-  - bioRxiv
-  - Zenodo
-  - ResearchGate
-  - Wayback Machine
-  - Author profiles via Google
+### 🌐 Multi‑Source Open‑Access Search  
+The tool checks a wide range of legal, public sources:
 
-- 🔁 **Retry Logic & Logging**  
-  Handles timeouts and failures gracefully with exponential backoff and logs all activity to `paywall_bypass.log`.
+- **Unpaywall API**
+- **Google Scholar (public results)**
+- **Wayback Machine**
+- **bioRxiv**
+- **CORE API** (optional)
+- **Zenodo**
+- **Author‑uploaded PDFs** (via Google search)
+- **ResearchGate** (public pages, Selenium optional)
+- **ACS Publications** (open‑access links, Selenium optional)
 
-- ⚠️ **Optional Sci-Hub Fallback**  
-  Included for educational purposes only. Use responsibly and at your own discretion.
+### 🔁 Smart Retry Logic  
+- Capped exponential backoff  
+- Randomized user‑agents  
+- Graceful handling of timeouts and failures  
 
----
+### 📝 Logging  
+All activity is logged to:
 
-## 🛠️ Installation
-
-```bash
-git clone https://github.com/yourusername/ultimate-academic-paywall-bypass.git
-cd ultimate-academic-paywall-bypass
-pip install -r requirements.txt
