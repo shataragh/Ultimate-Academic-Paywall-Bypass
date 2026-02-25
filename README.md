@@ -27,7 +27,7 @@ Access to scientific knowledge should never depend on geography, sanctions, or f
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="https://i.postimg.cc/VsHJP9kY/Untitled.png" alt="Screenshot of the program" width="600">
+  <img src="https://i.postimg.cc/Y02cgxKz/Untitled.png" alt="Screenshot of the program" width="600">
 </p>
 
 ---
