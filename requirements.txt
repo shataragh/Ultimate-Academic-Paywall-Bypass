@@ -1,7 +1,9 @@
-requests>=2.31.0  
-beautifulsoup4>=4.12.2  
-selenium>=4.15.2  
-validators>=0.22.0  
-colorama>=0.4.6  
-Optional (for faster HTML parsing):  
-lxml>=4.9.3
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+selenium>=4.15.2
+validators>=0.22.0
+colorama>=0.4.6
+# Optional: faster HTML parsing
+# lxml>=4.9.3
+# Optional: clipboard support
+# pyperclip>=1.8.2
