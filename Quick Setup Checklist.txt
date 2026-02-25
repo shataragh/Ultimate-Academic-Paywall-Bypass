@@ -1,0 +1,20 @@
+# 1. Clone repo
+git clone https://github.com/shataragh/ultimate-academic-paywall-bypass.git
+cd ultimate-academic-paywall-bypass
+
+# 2. Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+# venv\Scripts\activate   # Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Install ChromeDriver (if using Selenium)
+pip install webdriver-manager
+
+# 5. Set environment variables
+export UNPAYWALL_EMAIL="your_email@example.com"
+
+# 6. Run the tool
+python ultimate_academic_paywall_bypass.py
